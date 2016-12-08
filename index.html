@@ -15,10 +15,17 @@
   <body>
     <a-scene>
       <a-assets>
-        <img id="start" src="img/IMG_6903.jpg">
+        <img id="start" src="img/IMG_6903.JPG">
+        <!-- <img id="kieran" src="img/1.jpg">
+        <img id="kieran-thumb" crossorigin="anonymous" src="img/kieran-thumb.png">
+        <img id="christian-thumb" crossorigin="anonymous" src="img/christian-thumb.png">
+        <img id="eddie-thumb" crossorigin="anonymous" src="img/eddie-thumb.png">
+        <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
+        <img id="christian" crossorigin="anonymous" src="img/2.jpg">
+        <img id="eddie" crossorigin="anonymous" src="img/4.jpg"> -->
 
         <!-- Image link template to be reused. -->
-        <script id="link" type="text/nunjucks">
+        <!-- <script id="link" type="text/nunjucks">
           <a-plane class="link" height="1" width="1"
             material="shader: flat; src: {{ thumb }}"
             event-set__1="_event: mousedown; scale: 1 1 1"
@@ -28,18 +35,18 @@
             set-image="on: click; target: #image-360; src: {{ src }}"
             sound="on: click; src: #click-sound"
             update-raycaster="#cursor"></a-plane>
-        </script>
+        </script> -->
       </a-assets>
 
       <!-- 360-degree image. -->
-      <a-sky id="image-360" radius="10" src="#kieran"></a-sky>
+      <a-sky id="image-360" radius="10" src="#start"></a-sky>
 
       <!-- Image links. -->
-      <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
+      <!-- <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
         <a-entity template="src: #link" data-src="#christian" data-thumb="#christian-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#kieran" data-thumb="#kieran-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#eddie" data-thumb="#eddie-thumb"></a-entity>
-      </a-entity>
+      </a-entity> -->
 
       <!-- Camera + cursor. -->
       <a-entity camera look-controls>
